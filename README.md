@@ -1,2 +1,2 @@
 # CVGSSL
-CVGSSL implementation code
+The code is coming soon.
