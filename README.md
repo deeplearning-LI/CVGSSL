@@ -1,2 +1,2 @@
 # CVGSSL
-The code is being collated and will be made public by March 2025.
+The code is being collated and will be made public by May 2025.
