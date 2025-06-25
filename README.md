@@ -7,7 +7,7 @@
 Metal surface defect recognition (MSDR) based on deep learning encounters the challenge of Few-Shot expert-labeled data. In this study, we proposed a CLIP-Vision Guided Self Supervised Learning (CVGSSL) framework for representation learning of unlabeled data, completing MSDR using Few-Shot labeled data. This framework initially generates rich and diverse representation information through multiple CLIP-Vs to ensure effective SSL pre-training, followed by the design of an MLP-Adapter to distill knowledge and adapt these representations to recognition tasks. Additionally, we constructed a self-constrained loss to address the inherent problem of intra-class and inter-class distance ambiguity that causes the representation to fall into an equivocal decision margin. Following label-free pre-training of CVGSSL, the downstream model adapts to 1-shot to 4-shot defect recognition tasks through fine-tuning.
 
 ### 🚀 Getting Started
-
+> ⚠️ **Note**: Please manually download the CLIP checkpoint (e.g., `RN50.pt`) and place it in the `ckp/` folder. Also, create necessary folders like `weight/` and `results/` beforehand, as they are not auto-generated.
 #### 1. Install Dependencies
 
 ```bash
