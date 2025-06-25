@@ -4,7 +4,7 @@
 
 
 ## 🧠 CVGSSL Project  
-Metal surface defect recognition (MSDR) based on deep learning encounters the challenge of Few-Shot expert-labeled data. In this study, we proposed a CLIP-Vision Guided Self Supervised Learning (CVGSSL) framework for representation learning of unlabeled data, completing MSDR using Few-Shot labeled data. This framework initially generates rich and diverse representation information through multiple CLIP-Vs to ensure effective SSL pretraining, followed by the design of an MLP-Adapter to distill knowledge and adapt these representations to recognition tasks. Additionally, we constructed a self-constrained loss to address the inherent problem of intra-class and interclass distance ambiguity that causes the representation to fall into an equivocal decision margin. Following labelfree pre-training of CVGSSL, the downstream model adapts to 1-shot to 4-shot defect recognition tasks through finetuning.
+Metal surface defect recognition (MSDR) based on deep learning encounters the challenge of Few-Shot expert-labeled data. In this study, we proposed a CLIP-Vision Guided Self Supervised Learning (CVGSSL) framework for representation learning of unlabeled data, completing MSDR using Few-Shot labeled data. This framework initially generates rich and diverse representation information through multiple CLIP-Vs to ensure effective SSL pre-training, followed by the design of an MLP-Adapter to distill knowledge and adapt these representations to recognition tasks. Additionally, we constructed a self-constrained loss to address the inherent problem of intra-class and inter-class distance ambiguity that causes the representation to fall into an equivocal decision margin. Following label-free pre-training of CVGSSL, the downstream model adapts to 1-shot to 4-shot defect recognition tasks through fine-tuning.
 
 ### 🚀 Getting Started
 
@@ -12,6 +12,7 @@ Metal surface defect recognition (MSDR) based on deep learning encounters the ch
 
 ```bash
 pip install torch torchvision timm numpy
+pip install git+https://github.com/openai/CLIP.git
 ```
 
 #### 2. Run the Training Script
@@ -61,6 +62,19 @@ Expected directory structure:
 * [x] Few-shot training and evaluation
 * [x] Separate training modes: linear probing and full finetuning
 * [x] Configurable optimizer, learning rate, and more
+
+
+### 📚 Dataset Sources
+
+The datasets used in this project are derived from well-established benchmarks and studies in the field of industrial surface defect detection:
+
+1. **A noise robust method based on completed local binary patterns for hot-rolled steel strip surface defects**
+
+2. **X-SDD: A new benchmark for hot rolled steel strip surface defects detection**
+
+3. **Deep metallic surface defect detection: The new benchmark and detection network**
+
+
 
 
 ### 📜 Acknowledgements
